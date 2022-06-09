@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let a = parseFloat(prompt("Nhập giá trị a"))
+  let b = parseFloat(prompt("Nhập giá trị b"))
+  let c = parseFloat(prompt("Nhập giá trị c"))
+  denta = b*b - (4*a*c)
+  x1 = (-b + Math.sqrt(denta))/2*a
+  x2 = (-b - Math.sqrt(denta))/2*a
+  x = -b/(2*a)
+if (denta > 0) { document.writeln("Nghiệm của pt là x1 = " + x1 + " , x2 = " + x2)
+} else if (denta < 0) {alert("Pt vô nghiệm")}
+else {
+    document.writeln("pt có nghiệm kép = " + x)
+}
+</script>
+</body>
+</html>

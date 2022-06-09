@@ -5,16 +5,30 @@
     <title>Title</title>
 </head>
 <body>
-<table>
-    <tr>
-        <th>Amount</th>
-        <th>From Currency</th>
-        <th>To Currency</th>
-        <th></th>
-    </tr>
-    <tr>
-    <td><input type="button"></td>
-    </tr>
-</table>
+<input type="text" id="amount">
+<select name="" id="from">
+    <option value="175">VIET NAM</option>
+    <option value="1">JAPAN</option>
+</select>
+<select name="" id="to">
+    <option value="175">VIET NAM</option>
+    <option value="1">JAPAN</option>
+</select>
+<button onclick="convert()">convert</button>
+<script>
+    function convert() {
+        //b1: lay amount
+        let amount = document.getElementById("amount").value;
+        //b2: lay from lay to
+        let from = document.getElementById("from").value;
+        let to = document.getElementById("to").value;
+        //b3: tinh ty gia (from/to)
+        let rate = from/to;
+        //    b4: lat amount/ty gia
+        let result = amount/rate;
+        alert(result);
+
+    }
+</script>
 </body>
 </html>

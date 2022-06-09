@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+let a = parseFloat(prompt("Nhập số điện: "))
+x = a * 2000
+y = a * 3000
+z = a * 4000
+g = a * 5000
+if (a < 0) {alert("Ngáo à")}
+else {
+    if (a < 50 ) { document.writeln("Tổng tiền: " + x + " vnd")}
+    else { if (a < 100) {document.writeln("Tổng tiền: " + y + " vnd")}
+        else { if (a < 500) {document.writeln("Tổng tiền: " + z + " vnd")}
+        else {document.writeln("Tổng tiền: " + g + " vnd")}
+    }
+    }
+}
+</script>
+</body>
+</html>

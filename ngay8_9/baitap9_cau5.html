@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let a = parseFloat(prompt("Nhập điểm thi giữa kì"))
+  let b = parseFloat(prompt("Nhập điểm thi cuối kì"))
+  diemchuan = (a + 2*b) / 3
+ if ((a<0 || a>10) || (b<0 || b>10)) {
+alert("Nhập ngu thế")
+ } else {     if (diemchuan < 5) {alert("Học ngu thế")} else {
+     if (diemchuan < 7) {alert("Trung binh")} else {
+         if (diemchuan<8) {alert("KHá")} else {
+             if (diemchuan<9) {alert("Giỏi")} else {alert("Xuất sắc")}
+         }
+     }
+ }}
+</script>
+</body>
+</html>
