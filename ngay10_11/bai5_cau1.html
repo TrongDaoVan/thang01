@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Bạn hiền thích bao nhiêu số Fibonaci:
+<input type="number" id="x">
+<button onclick="demo()">Oki bạn ơi</button>
+<p id="ketqua"></p>
+</body>
+<script>
+    function demo() {
+        let x = parseFloat(document.getElementById("x").value)
+        let a1 = 0;
+        let a2 = 1
+        let a3
+        let congchuoi = ""
+        for (let i = 0; i < x; i++) {
+            a3 = a1 + a2
+            a1 = a2
+            a2 = a3
+            congchuoi += "<br>" + a1
+
+        }
+        document.getElementById("ketqua").innerHTML=congchuoi
+    }
+</script>
+</html>

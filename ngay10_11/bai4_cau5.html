@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a1 = 0
+    let a2 = 1
+    let a3 = 0
+    let tong = 0
+    for (let i = 0; i < 20; i++) {
+        document.write(a1 + "<br>")
+        tong += a1
+        a3 = a1 + a2;
+        a1 = a2;
+        a2 = a3;
+    }document.write("Tổng = " + tong)
+</script>
+</body>
+</html>
