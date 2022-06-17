@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let bienmang = [];
+  let sobien = prompt("Bạn hiền thích bao nhiêu biến nhỉ: ");
+  let n = parseInt(sobien)
+  for (let i = 0; i < n; i++) {
+      let phantu = prompt("Nhập phần tử đi bạn hiền:" + i);
+      bienmang.push(phantu)
+  }
+  biennguoc = bienmang.reverse()
+  document.write("Đảo ngược = "+biennguoc)
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let bienmang = [];
+    for (let i = 0; i < 10; i++) {
+        let phantu = parseInt(prompt("Mời bạn nhập vào phần tử thứ " + i));
+        bienmang.push(phantu);
+    }
+    let max = bienmang[0]
+    for (let i = 0; i < 10; i++) {
+        if (max < bienmang[i]) {
+            max = bienmang[i]
+        }
+    } document.write(max)
+
+</script>
+</body>
+</html>

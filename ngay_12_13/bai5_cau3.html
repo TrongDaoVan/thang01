@@ -3,15 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-<!--    @All 3h30 chị sẽ chữa bài:-->
-<!--    - Nhập vào mảng n phần tử-->
-<!--    - In ra mảng-->
-<!--    - In ra tổng các phần tử trong mảng.-->
 </head>
 <body>
-
-</body>
-</html>
 <script>
     let bienmang = [];
     let soluong = prompt("Nhập số lượng các phần tử");
@@ -20,9 +13,18 @@
         let temp = parseInt(prompt("Mời bạn nhập vào phần tử thứ " + i));
         bienmang.push(temp);
     }
+    let max = bienmang[0]
+    for (let i = 0; i < 10; i++) {
+        if (max < bienmang[i]) {
+            max = bienmang[i]
+        }
+    } document.write("Max = " + max + "<br>")
     let sum = 0;
     for (let i = 0; i < n; i++) {
         sum += bienmang[i];
+        trungbinh= sum/n
     }
-    document.write(sum)
+    document.write("Trung bình = " + trungbinh)
 </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let bienmang = [];
+    for (let i = 0; i < 10; i++) {
+        let phantu = prompt("Nhập phần tử thứ " + i + " đi bạn hiền ơi");
+        bienmang.push(phantu)
+        document.write(bienmang[i] + "<br>")
+
+    }
+    let v = prompt("Bạn thích kiểm tra phần tử nào: ")
+    for (let i = 0; i < bienmang.length; i++) {
+        if (bienmang[i] == v) {
+            bienmang.splice(i, 1);
+            bienmang.push(0);
+        }
+    }
+
+    document.write(bienmang)
+
+</script>
+</body>
+</html>

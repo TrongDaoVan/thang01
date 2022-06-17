@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+let bienmang = [];
+let soluong = prompt("Nhập số biến bạn iu thích đi: ");
+let n = parseInt(soluong);
+for (let i = 0; i < n; i++) {
+    let phantu = parseInt(prompt("Phần tử thứ " + i + " của bạn là gì nhỉ"));
+    bienmang.push(phantu);
+}
+let count =0;
+for (let i = 0; i < n; i++) {
+    if (bienmang[i] < 0) {
+        count++;
+    }
+} document.write("Số lượng số âm là = " + count)
+</script>
+</body>
+</html>

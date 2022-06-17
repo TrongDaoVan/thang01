@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+let bienmang = [];
+let a=0
+for (let i = 0; i < 10; i++) {
+    let phantu = prompt("Nhập phần tử thứ "+ i + " đi bạn hiền ơi");
+    bienmang.push(phantu)
+}
+let v = prompt("Bạn thích kiểm tra phần tử nào: ")
+for (let i = 0; i < bienmang.length; i++) {
+    if (bienmang[i] == v) {
+        a = 1
+        break
+    }
+} if (a == 1) {
+    document.write("V is in the array")
+} else {
+    document.write("V is not in the array")
+}
+
+</script>
+</body>
+</html>

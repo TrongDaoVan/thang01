@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let bienmang = [];
+    for (let i = 0; i < 10; i++) {
+        let phantu = prompt("Nhập phần tử thứ " + i + " đi bạn hiền ơi");
+        bienmang.push(phantu)
+        document.write(bienmang[i] + "<br>")
+    }
+    let sapxem = bienmang.sort((a,b) => {return a - b})
+    document.write(sapxem)
+</script>
+</body>
+</html>

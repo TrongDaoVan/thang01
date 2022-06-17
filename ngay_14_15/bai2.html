@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<table>
+  <tr>
+    <th>Nhập số foot</th>
+    <td>
+      <input type="nuber" id="foot">
+    </td>
+  </tr>
+  <tr>
+    <th>Nhập số meter</th>
+    <td>
+      <input type="nuber" id="meter">
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <button onclick="demo()">kiểm tra</button>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p id="ketqua"></p>
+    </td>
+  </tr>
+</table>
+</body>
+</html>
+<script>
+  function demo() {
+    let foot = parseInt(document.getElementById("foot").value);
+    let meter = parseInt(document.getElementById("meter").value);
+    function tinhfoot(foot) {
+      foot = 3.279 * meter;
+      return foot
+    }
+    function tinhmeter(meter) {
+      meter = 0.305 * foot;
+      return meter
+    }
+    document.getElementById("ketqua").innerHTML = foot + " foot = " + tinhfoot(foot) + " meter" + "<br>"
+            +meter + " meter" + " = " + tinhmeter(meter) + " foot" + "<br>"
+
+  }
+
+</script>
