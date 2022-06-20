@@ -5,6 +5,20 @@
     <title>Title</title>
 </head>
 <body>
-
+<input type="text" id="name"> <br>
+<button onclick="demo()">check</button>
 </body>
 </html>
+<script>
+function demo() {
+    let ngoisao = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    let chomsao = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+    function checkxem(name) {
+        let index = -1;
+        for (let i = 0; i < stars.length; i++) {
+            if(name==stars[i]) index=i;
+        }
+        return index;
+    }
+}
+</script>
